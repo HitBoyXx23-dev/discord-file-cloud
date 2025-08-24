@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discord File Cloud (Webhook)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Discord File Cloud</h2>
+
+    <div id="dropzone">
+      <p>Drag & Drop files here or click to select</p>
+      <input type="file" id="fileInput" multiple>
+    </div>
+
+    <button id="uploadBtn">Upload</button>
+
+    <div id="resultsGrid"></div>
+  </div>
+
+  <footer class="footer">
+    <small>Disclaimer: The uploaded files go to a private Discord server</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
