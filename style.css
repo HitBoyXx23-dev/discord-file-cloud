@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#dropzone {
+  border: 2px dashed #5865f2;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#dropzone.dragging {
+  background: rgba(88, 101, 242, 0.1);
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background: #5865f2;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #4752c4;
+}
+
+#resultsGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.file-card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.file-preview {
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.file-name {
+  font-size: 0.9em;
+  word-break: break-all;
+}
+
+.status {
+  font-size: 0.85em;
+  color: #555;
+}
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #555;
+}
